@@ -12,7 +12,7 @@
 
 #include "Dog.hpp"
 
-Dog::Dog() : Animal()
+Dog::Dog()
 {
 	this->type = "Dog";
 	std::cout << GREEN"Default constructor for "CYAN << this->type << GREEN" called."RESET << std::endl;
@@ -36,7 +36,7 @@ Dog::~Dog()
 	std::cout << GREEN"Default destructor for "CYAN << this->type << GREEN" called."RESET << std::endl;
 }
 
-void Dog::makeSound()
+void Dog::makeSound() const
 {
 	std::cout << WHITE"The " << CYAN"Dog" << WHITE" goes : " << CYAN"\"Bark Barkk~~\"" << std::endl;
 }

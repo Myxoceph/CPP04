@@ -35,3 +35,13 @@ Animal::~Animal()
 {
 	std::cout << GREEN"Default destructor for animal called."RESET << std::endl;
 }
+
+std::string Animal::getType() const
+{
+	return (this->type);
+}
+
+void Animal::makeSound() const
+{
+	std::cout << WHITE"The base animal sound!" << std::endl;
+}

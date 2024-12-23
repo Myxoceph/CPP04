@@ -12,7 +12,7 @@
 
 #include "Cat.hpp"
 
-Cat::Cat() : Animal()
+Cat::Cat()
 {
 	this->type = "Cat";
 	std::cout << GREEN"Default constructor for "YELLOW << this->type << GREEN" called."RESET << std::endl;
@@ -36,7 +36,7 @@ Cat::~Cat()
 	std::cout << GREEN"Default destructor for "YELLOW << this->type << GREEN" called."RESET << std::endl;
 }
 
-void Cat::makeSound()
+void Cat::makeSound() const
 {
-	std::cout << WHITE"The " << YELLOW"cat" << WHITE" goes : " << YELLOW"\"Meow Meoww~~\"" << std::endl;
+	std::cout << WHITE"The " << YELLOW"Cat" << WHITE" goes : " << YELLOW"\"Meow Meoww~~\"" << std::endl;
 }

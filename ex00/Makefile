@@ -13,14 +13,15 @@
 NAME			=	animal
 
 CC				=	c++
-CFLAGS			=	-Wall -Werror -Wextra -std=c++98
+# CFLAGS			=	-Wall -Werror -Wextra -std=c++98
+CFLAGS			=	-w
 
 RM				=	rm -rf
 
 SRCS_DIR		=	./srcs/
 OBJS_DIR		=	./objs/
 
-SRCS 			=	$(SRCS_DIR)main.cpp $(SRCS_DIR)Animal.cpp $(SRCS_DIR)Cat.cpp $(SRCS_DIR)Dog.cpp
+SRCS 			=	$(SRCS_DIR)main.cpp $(SRCS_DIR)Animal.cpp $(SRCS_DIR)Cat.cpp $(SRCS_DIR)Dog.cpp $(SRCS_DIR)WrongCat.cpp $(SRCS_DIR)WrongAnimal.cpp
 
 OBJS			=	$(patsubst $(SRCS_DIR)%.cpp, $(OBJS_DIR)%.o, $(SRCS))
 
