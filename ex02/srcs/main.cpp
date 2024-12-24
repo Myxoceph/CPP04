@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/23 18:10:57 by abakirca          #+#    #+#             */
-/*   Updated: 2024/12/24 19:04:15 by abakirca         ###   ########.fr       */
+/*   Created: 2024/12/23 18:20:08 by abakirca          #+#    #+#             */
+/*   Updated: 2024/12/24 19:29:43 by abakirca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-#define DOG_HPP
-
 #include "Animal.hpp"
-#include "Brain.hpp"
+#include "Cat.hpp"
+#include "Dog.hpp"
 
-class Dog : public Animal
+int main()
 {
-	private : 
-		Brain *brain;
+	Dog brian;
+	Cat garfield;
+	// Animal _newAnimal;
 
-	public :
-		void makeSound() const;
-		Dog();
-		Dog(const Dog &copy);
-		Dog &operator=(const Dog &copy);
-		~Dog();
-		void setIdeas(int index, std::string idea);
-		std::string getIdeas(int index);
-};
-
-#endif
+	brian.makeSound();
+	garfield.makeSound();
+}

@@ -6,15 +6,14 @@
 #    By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 20:10:29 by abakirca          #+#    #+#              #
-#    Updated: 2024/12/23 18:23:32 by abakirca         ###   ########.fr        #
+#    Updated: 2024/12/24 19:31:48 by abakirca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	animal
 
 CC				=	c++
-# CFLAGS			=	-Wall -Werror -Wextra -std=c++98
-CFLAGS			=	-w
+CFLAGS			=	-Wall -Werror -Wextra -std=c++98
 
 RM				=	rm -rf
 
@@ -48,7 +47,7 @@ clean			:
 
 fclean			:	clean
 					@$(RM) $(NAME)
-					@echo "\e[1m$(COLOR_YELLOW)$(NAME)	$(COLOR_RED)[is deleted!]\e[0m$(COLOR_END)"
+					@echo "\e[1m$(COLOR_YELLOW)$(NAME)		$(COLOR_RED)[is deleted!]\e[0m$(COLOR_END)"
 
 re				:	fclean all
 
