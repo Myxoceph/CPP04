@@ -13,7 +13,7 @@
 NAME			=	animal
 
 CC				=	c++
-CFLAGS			=	-std=c++98
+CFLAGS			=	-w
 
 RM				=	rm -rf
 
