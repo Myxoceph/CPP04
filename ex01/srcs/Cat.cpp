@@ -6,7 +6,7 @@
 /*   By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 18:15:08 by abakirca          #+#    #+#             */
-/*   Updated: 2024/12/23 18:19:33 by abakirca         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:54:56 by abakirca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ Cat &Cat::operator=(const Cat &copy)
 {
 	std::cout << GREEN"Copy assignment operator called."RESET << std::endl;
 	this->type = copy.type;
-	this->brain = copy.brain;
+	this->brain = new Brain(*copy.brain);
 	return (*this);
 }
 

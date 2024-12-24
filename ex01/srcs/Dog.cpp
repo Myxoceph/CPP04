@@ -6,7 +6,7 @@
 /*   By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 18:17:15 by abakirca          #+#    #+#             */
-/*   Updated: 2024/12/23 18:20:03 by abakirca         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:54:53 by abakirca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Dog::Dog(const Dog &copy)
 {
 	std::cout << GREEN"Copy constructor called."RESET << std::endl;
 	this->type = copy.type;
-	this->brain = copy.brain;
+	this->brain = new Brain(*copy.brain);
 }
 
 Dog &Dog::operator=(const Dog &copy)
