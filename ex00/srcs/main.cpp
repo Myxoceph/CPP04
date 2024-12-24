@@ -25,7 +25,7 @@ int main()
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
 	std::cout << k->getType() << " " << std::endl;
-	i->makeSound(); 
+	i->makeSound();
 	j->makeSound();
 	meta->makeSound();
 	k->makeSound();

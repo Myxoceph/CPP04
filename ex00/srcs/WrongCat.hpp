@@ -10,7 +10,7 @@ class WrongCat : public WrongAnimal
 		WrongCat(const WrongCat &copy);
 		WrongCat &operator=(const WrongCat &copy);
 		~WrongCat();
-		virtual void makeSound() const;
+		virtual void makeSound() const; // Dont need virtual here.
 };
 
 
