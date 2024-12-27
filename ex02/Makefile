@@ -6,14 +6,14 @@
 #    By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 20:10:29 by abakirca          #+#    #+#              #
-#    Updated: 2024/12/24 19:30:24 by abakirca         ###   ########.fr        #
+#    Updated: 2024/12/27 14:26:48 by abakirca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	animal
 
 CC				=	c++
-CFLAGS			=	-std=c++98
+CFLAGS			=	-Wall -Werror -Wextra -std=c++98
 
 RM				=	rm -rf
 

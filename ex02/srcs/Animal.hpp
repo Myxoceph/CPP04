@@ -6,7 +6,7 @@
 /*   By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 18:06:09 by abakirca          #+#    #+#             */
-/*   Updated: 2024/12/24 19:26:04 by abakirca         ###   ########.fr       */
+/*   Updated: 2024/12/27 13:15:08 by abakirca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ class Animal
 		virtual ~Animal();
 		std::string getType() const;
 		virtual void makeSound() const = 0;
-		// virtual void abstractMaker() const = 0;
 };
 
 

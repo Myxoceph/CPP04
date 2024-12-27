@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abakirca <abakirca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/27 13:14:07 by abakirca          #+#    #+#             */
+/*   Updated: 2024/12/27 13:55:55 by abakirca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef WRONGANIMAL_HPP
 #define WRONGANIMAL_HPP
 
@@ -20,7 +32,7 @@ class WrongAnimal
 		WrongAnimal();
 		WrongAnimal(const WrongAnimal &copy);
 		WrongAnimal &operator=(const WrongAnimal &copy);
-		virtual ~WrongAnimal();
+		~WrongAnimal();
 		void makeSound() const;
 		std::string getType() const;
 
